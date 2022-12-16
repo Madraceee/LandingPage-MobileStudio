@@ -10,6 +10,17 @@ gsap.to(".feature-text",{
 })
 
 
+gsap.to(".feature-animation",{
+    scrollTrigger:{
+        trigger:".features",
+        start: "top center",
+        toggleActions: "restart none none erase",
+    },
+    opacity :1,
+    duration: 2
+})
+
+
 
 creatorPicAnimation={trigger:".creators",
     start: "90px bottom",

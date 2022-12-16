@@ -1,0 +1,103 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+    </style>
+    <title>The Mobile Studio</title>
+</head>
+<body>
+    <div class="app">
+        <div class="landing-page">
+            <nav class="nav-bar">
+                <div class="heading">
+                    <h2>The Mobile Studio</h2>
+                </div>
+                <div class="links">
+                    <ul>
+                        <li><h3><a href="#feature-page">Features</a></h3></li>
+                        <li><h3> <a href="#creator-page">Creators</a></h3></li>
+                        <li><h3> <a href="#join-now-page">Join Now</a></h3></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="content">
+                <img src="pictures/bus.jpg" alt="bus" />
+                <div class="content-text">
+                    <h2>The Ultimate Mobile Studio</h2>
+                    <h3>Record your podcasts, videos in a plug and play set.</h3>
+                </div>
+            </div>
+        </div>
+        <div class="features" id="feature-page">
+            <div class="feature-holder">
+                <ul>
+                    <li>
+                        <div class="img-container"><img src="pictures/time.png" alt="time" class="feature-pic"></div>
+                        <h3 class="feature-text">Available 24/7 and sevices will be provided on time.</h3>
+                    </li>
+                    <li>
+                        <div class="img-container"><img src="pictures/plugPlay.png" alt="plugPlay" class="feature-pic"></div>
+                        <h3 class="feature-text">Plug and play sets to match your style</h3>
+                    </li>
+                    <li>
+                        <div class="img-container"><img src="pictures/silent.png" alt="silent" class="feature-pic"></div>
+                        <h3 class="feature-text">Isolated environment for disturbance free recording.</h3>
+                    </li>
+                </ul>
+            </div>
+            <div class="oval-box">
+                <img src="pictures/bus-recording.jpg" alt="">
+            </div>
+            
+            
+        </div>
+
+        <div class="creators" id="creator-page">
+            <div class="picture-frame">
+                <img src="pictures/1-creator.jfif" class="pic1 " >
+                <img src="pictures/2-creator.jpg" class="pic2">
+                <img src="pictures/3-creator.jpg" class="pic3">
+            </div>
+            <div class="creator-text">
+                <h2>Patnering with Creators</h2>
+                <h3>Many creators have patnered with us. More creators are joining</h3>
+            </div>
+        </div>
+        <div class="joinUs" id="join-now-page">
+            <p>Want to kick start your podcast or youtube carrer</p>
+            <button class="join-now-btn" id="join-btn"><a href="#mail-entry">Join Now</a></button>
+        </div>
+        <footer>
+            <div class="heading">
+                <h2>The Mobile Studio</h2>
+            </div>
+            <div class="links bottom-nav">
+                <ul>
+                    <li><h3>Contant</h3></li>
+                    <li><h3>Pricing</h3></li>
+                    <li><h3>Locations</h3></li>
+                </ul>
+            </div>
+        </footer>        
+    </div>
+    <div class="overlay overlay-off" id="mail-entry">
+        <div class="email-wrapper">
+            <p id="close-overlay">X</p>
+            <h1>Enter your email</h1>
+            <input type="email" id="email-input">
+            <button id="submit-email">Join waitlist</button>
+        </div>        
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+    <script src="bundle.js"></script>
+</body>
+</html>

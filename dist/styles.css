@@ -1,0 +1,329 @@
+html,body{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    background-color: #353535;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+h2{
+    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 59px;
+    margin: 30px;
+}
+
+h3{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 49px;
+    font-weight: 400;
+    text-align: center;
+}
+
+ul{
+    list-style-type: none;
+}
+
+
+/* Top nav bar */
+.heading > h2{
+    margin-top: 20px;
+}
+
+.nav-bar, footer{
+    background-color: black;
+    max-height: 14%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.links > ul{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+
+.links > ul > li{
+    display: block;
+    padding: 0 10px;
+    padding-bottom: 0;
+    margin: 0;
+    font-size: 35px;
+}
+
+
+/* Initial page */
+.content{
+    position: relative;
+    max-width: 100%;
+
+}
+.content > img{
+    width: 100%;
+    height: 100%;
+}
+
+.content-text{
+    position: absolute;
+    z-index: 2;
+    top: 25%;
+    left: 0px;
+    color: black;
+    
+}
+
+.content-text > h2{
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 7px;
+}
+
+.content-text > h3{
+    width: 400px;
+    padding-left: 13%;
+    font-size: 30px;
+    margin-top: 7px;
+    line-height: 30px;
+}
+
+
+/* Features-page */
+
+.features{
+    /* position: absolute; */
+    max-width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.oval-box > img{
+    width: 887px;
+    height: 100vh;
+    z-index: -1;
+    box-sizing: border-box;
+    display: block;
+    
+}
+
+.oval-box{
+    border-radius: 100px solid red;
+    z-index: 1;
+    color: red;
+}
+
+.img-container{
+    /* position: absolute; */
+    width: 150px;
+    height: 150px;
+    background-color: #201f1f;
+    border-radius: 20px;
+}
+
+.feature-holder{
+    padding: 100px 0;
+}
+
+.feature-holder img{
+    position: relative;
+    top: 8%;
+    left: 8%;
+    max-width: 126px;
+    max-height: 126px;
+}
+
+.feature-holder li{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+
+.feature-text{
+    position:relative;
+    display: inline-block;
+    top: 100px;
+    padding: 0 20px;
+    width: 400px;
+    visibility:hidden;
+}
+
+
+
+
+/* Creators-page */
+
+.creators {
+    max-width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: auto;
+    padding-top: 10%;
+}
+
+.picture-frame{
+    display: grid;
+    max-width: 730px;
+    height: 500px;
+    grid-template-areas:
+    "a a a a b b b b"
+    "a a a a b b b b"
+    "c c c c c c c c"
+    "c c c c c c c c";
+    padding: 80px;
+
+}
+
+.picture-frame > img{
+    width: 390px;
+    height: 230px;
+    margin: 10px 10px;
+}
+
+.pic1{
+    position:relative;
+    left: -150% ;
+    grid-area: a;
+    transform: rotate(180deg);
+}
+
+.pic2{
+    position:relative;
+    top : -50%;
+    visibility: hidden;
+    grid-area: b;
+}
+
+.pic3{
+    position: relative;
+    width: 800px !important;
+    grid-area: c;
+    top: 30%
+}
+
+.creator-text {
+    position: relative;
+    top : 30%;
+    text-align: center;
+}
+
+.creator-text > h2{
+    margin: 0 30px;
+}
+
+.creator-text > h3{
+    display: inline-block;
+    position: relative;
+    font-size: 25px;
+    width: 400px;
+    margin: 0 30px;
+    /* left: 20%; */
+}
+
+
+/* Join now */
+
+footer{
+    padding-bottom: 20px;
+}
+
+.joinUs{
+    height: 70vh;
+    text-align: center;
+}
+
+.joinUs > p{
+    position: relative;
+    top: 20%;
+    font-size: 250%;
+}
+
+.joinUs > button{
+    position: relative;
+    top: 85%;
+    font-size: 200%;
+    padding: 20px 30px;
+    margin: 0;
+    color: white;
+    background-color: #73B9C1;
+    border:  none;
+    border-radius: 75px;
+    z-index: -1;
+    opacity: 0;
+} 
+
+
+/* Email form */
+.overlay{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: 2;
+    transition: opacity 500ms;    
+}
+
+.overlay-off{    
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay-on{
+    visibility: true;
+    opacity: 1;
+}
+
+#close-overlay{
+    position: absolute;
+    left: 90%;
+    margin-top: 0;
+    font-weight: 500 ;
+}
+
+.email-wrapper{
+    margin: 100px auto;
+    padding: 20px;
+    background: #e5e5e5;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    text-align: center;
+    color: #353535;
+    z-index: 3;
+}
+
+.email-wrapper > h1{
+    margin-top: 0;
+}
+
+.email-wrapper > input{
+    width: 90%;
+    font-size: 28px;
+    color: black;
+}
+
+#submit-email {
+    margin: 20px 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: solid #353535;
+}
